@@ -2,18 +2,84 @@
 body{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .bordered{
     border: 1px solid black;
-    flex-grow: 1;
 }
+
+ion-icon{
+    height: 30px;
+    width: 30px;
+}
+
 header{
     width: 100vw;
     height: 10vh;
     display: flex;
     flex-direction: row;
 }
+header #search{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    width: 25%;
+}
+#search img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+header #centerNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 50%;
+
+}
+#centerNav ul{
+    display: flex;
+    flex-direction: row;
+}
+#centerNav ul li{
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+#centerNav ul li a{
+    text-align: center;
+}
+
+
+header #rightNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 25%;
+    justify-content: flex-end;
+}
+
+#rightNav ul{
+    display: flex;
+    
+}
+#rightNav ul li{
+   margin: 15px;
+    
+}
+#rightNav  #pfp{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+
 
 main{
     width: 100vw;
@@ -23,19 +89,16 @@ main{
 }
 
 main #leftSideBar{
-    flex-grow: 1;
+    width: 25%;
+}
+main #rightSideBar{
+    width: 25%;
 }
 
-main #rightSideBar{
-    flex-grow: 1;
-}
 
-main #rightSideBar{
-    flex-grow: 1;
-}
 
 main #mainContent{
-    flex-grow: 3;
+    width: 50%;
     margin-left: 200px;
     margin-right: 200px;
 }
