@@ -1,0 +1,44 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.bordered{
+    border: 1px solid black;
+    flex-grow: 1;
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+
+main #leftSideBar{
+    flex-grow: 1;
+}
+
+main #rightSideBar{
+    flex-grow: 1;
+}
+
+main #rightSideBar{
+    flex-grow: 1;
+}
+
+main #mainContent{
+    flex-grow: 3;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+
